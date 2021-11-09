@@ -43,7 +43,7 @@ exports.login = async(req,res)=>{
                alertMessagge:"Ingrese un usuario y/o contraseña",
                alertIcon:"info",
                showConfirmButton:true,
-               timer:false,
+               timer:5000,
                ruta:"login"
            });     
         }else{
@@ -52,7 +52,7 @@ exports.login = async(req,res)=>{
                     res.render('login',{
                          alert:true,
                          alertTitle:"advertencia",
-                         alertMessagge:"Ingrese un usuario y/o contraseña",
+                         alertMessagge:"Usuario y/o contraseña incorrectos",
                          alertIcon:"info",
                          showConfirmButton:true,
                          timer:4000,
